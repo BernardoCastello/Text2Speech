@@ -7,7 +7,7 @@ Este projeto tem como objetivo gerar fala a partir de um texto em multiplas plat
 1. Clonar o repositório:
 
     ```bash
-    git clone https://github.com/seu-usuario/nome-do-projeto.git
+    git clone https://github.com/BernardoCastello/Text2Speach.git
     ```
 
 2. Instalar dependências:
