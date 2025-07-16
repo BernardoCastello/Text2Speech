@@ -1,6 +1,6 @@
 # Azure Text 2 Speach
 
-Este projeto tem como objetivo gerar fala a partir de um texto em multiplas plataformas.
+Este projeto tem como objetivo um gerador de falas das vozes da Azure.
 
 ## Instalação
 
