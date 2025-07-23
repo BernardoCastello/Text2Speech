@@ -10,13 +10,7 @@ Este projeto tem como objetivo um gerador de falas das vozes da Azure.
     git clone https://github.com/BernardoCastello/Text2Speach.git
     ```
 
-2. Instalar dependências:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3. Keys Necessárias:
+2. Keys Necessárias:
 
     Para executar esse projeto se faz necessário criar um arquivo .env na raiz com o dados de Azure_Key e Azure_Region. Esses dados deveram ser pessoais e gerados na Azure.
 
