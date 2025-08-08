@@ -51,6 +51,7 @@ function App() {
 
   return (
     <div className="app-container">
+
       <div className="central-container">
         <h1 className="title">Sintetizador de Voz</h1>
 
@@ -88,8 +89,10 @@ function App() {
           </div>
         </div>
 
+        <p className='max-caracters'>{text.length} / 450 caracteres</p>
         <textarea
           rows={5}
+          maxLength={450}
           value={text}
           onChange={(e) => setText(e.target.value)}
           placeholder="Digite o texto..."
@@ -106,7 +109,29 @@ function App() {
           </audio>
         )}
       </div>
+      <div className="instructions-container">
+        <h2 className='title'>Instruções</h2>
+        <p>
+          Este sintetizador suporta formatação de texto usando 
+          <strong> SSML (Speech Synthesis Markup Language)</strong>.  
+          Você pode usar tags para controlar a pronúncia, velocidade, 
+          pausas e entonação da voz.  
+          Exemplos:
+        </p>
+        <ul>
+          <li><code>&lt;break time="500ms"/&gt;</code> — adiciona uma pausa de meio segundo.</li>
+          <li><code>&lt;emphasis level="strong"&gt;texto&lt;/emphasis&gt;</code> — dá mais ênfase na pronúncia.</li>
+          <li><code>&lt;prosody rate="slow"&gt;texto&lt;/prosody&gt;</code> — fala mais devagar.</li>
+          <li><code>&lt;prosody pitch="+2st"&gt;texto&lt;/prosody&gt;</code> — altera o tom da voz.</li>
+        </ul>
+        <p>
+          Certifique-se de que o texto SSML seja válido e que todas as tags 
+          sejam devidamente fechadas.
+        </p>
+      </div>
+
     </div>
+    
   );
 }
 
